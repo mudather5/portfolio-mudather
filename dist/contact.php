@@ -74,7 +74,7 @@
     <br>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <div class="col-lg-5 col-md-5 col-sm-12 ">
           <form method="post" action="contact.php" value="">
 
             <div class="form-group">
@@ -91,9 +91,15 @@
               <button type="submit" name="submit" class="btn btn-primary">Envoyer</button>
 
             </div>
+        </div>      
 
           </form>
-        </div>
+          <div class="col-lg-6 col-sm-12 mt-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.137366291858!2d3.1206233010381057!3d50.5874000793938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d6f3dde76c5b%3A0x34141538b049659f!2sGroupe+VITAMINE+T!5e0!3m2!1sfr!2sfr!4v1530573210870" class="img-fluid" hight="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+          </div>
+      </div>
+    </div>
   </main>
 
 

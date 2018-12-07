@@ -1,0 +1,1424 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.mudather{
+	margin: 0;
+	padding: 0;
+	background-color: #343a40;
+}
+
+
+.mudather .row{
+	position: relative;
+	width: 100%;
+}
+
+.main_visiter .d-flex{
+	width: 100%;
+}
+.flex-fill{
+	position: relative;
+
+}
+
+.last{
+	/*position: absolute;*/
+    text-align: center;
+    background-color: #D8383F;
+    color: white;
+   /* padding-top: 4%;*/
+    width: 100%;
+}
+
+.text-block{
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	font-family: "loveloblack";
+	font-size: 1.8rem;
+ 
+}
+
+
+.text-block1{
+	position: absolute;
+	top: 30%;
+	left: 15px;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	font-family: "loveloblack";
+	font-size: 1.8rem;
+	
+}
+
+   @font-face {
+     font-family: "Lovelo";
+     src: url(../fonts/Lovelo.otf);
+   }
+   @font-face {
+      font-family: "pba";
+      src: url(../fonts/pba.ttf);
+    }
+
+.agenda_container, .footer_container{
+  max-width:1400px;
+}
+
+.agenda_paul h2{
+  font-size:25px;
+}
+
+
+.special_font{
+  font-family: "Lovelo";
+}
+
+.agenda_paul .button_border{
+  background-color: white;
+  border:5px solid black;
+  border-radius:0px;
+  font-size:15px;
+}
+
+.agenda_paul .button_border:hover{
+  background-color:white;
+  border-color:black;
+}
+
+.dropdown_style{
+  border-bottom:5px solid black;
+  border-right:5px solid black;
+  border-left:5px solid black;
+  border-top:none;
+  border-radius:0px;
+  width:243px;
+}
+
+.triangle, .triangle2{
+  width:0;
+  height:0;
+  position:relative;
+}
+
+.triangle{
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-top:10px solid black;
+  left:50%;
+  margin-left:-10px;
+}
+
+.agenda1, .agenda2, .agenda3, .agenda4{
+  background-size:cover;
+  background-position: center center;
+  height:280px;
+}
+
+
+/* @media (min-width: 768px) {
+    .individuel {
+        background: url("../img/Individuel.jpg") !important;
+    }
+    .groupe {
+        background: url("../img/Groupe.jpg") !important;
+    }
+    .famille {
+        background: url("../img/Famille.jpg") !important;
+    }
+    .etudiant {
+        background: url("../img/Etudiant.jpg") !important;
+    }
+    .enseignant {
+        background: url("../img/Enseignant.jpg") !important;
+    }
+    .main-group {
+        height: 512px;
+    }
+    .card p {
+        background: rgba(233, 232, 234, 0.7) !important;
+    }
+    .card p:hover, .card em:hover {
+        color: #D8383F !important;
+        cursor: pointer;
+    }
+    .card p {
+        margin: auto;
+        height: 60px;
+        position: relative;
+        top: 200px !important;
+    }
+    .pba {
+        font-size: 2rem !important;
+    }
+    .oeuvre4 .card-text,
+    .oeuvre8 .card-text,
+    .oeuvre12 .card-text {
+        right: 20px !important;
+        top: 30% !important;
+    }
+}
+
+.main {
+    background: #1D1D1E;
+    border: none;
+    margin: 0 !important;
+}
+
+.card p {
+    text-align: center;
+    font-size: 1.2rem;
+    background: #E9E9E9;
+}
+
+.bg-black {
+    background: #1D1D1E;
+    height: 150px;
+}
+
+.pba {
+    font-family: 'pba';
+    color: white;
+    width: auto;
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+.pba::before {
+    content: "\e922";
+    margin: 20px;
+}
+
+.card {
+    background-position: center center !important;
+    background-size: cover !important;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.rang1 .card p,
+.rang2 .card p {
+    position: relative;
+    top: 200px;
+}
+
+.vignette {
+    background: url("../img/Beaux-Gosses.jpg");
+    height: 480px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.vignette p {
+    background: rgba(255, 255, 255, 1) !important;
+    font-family: "lovelo" !important;
+    width: 224px;
+    height: 139px;
+    position: relative;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+.vignette em {
+    position: relative;
+    top: 70px;
+    font-size: 1rem !important;
+}
+.vignette .card-text em {
+    color: #868687;
+}
+
+.vignette .card-text em::before {
+    content: "\e907";
+    font-family: 'pba';
+    font-style: normal;
+    margin: 10px;
+}
+
+.incoutournable {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.oeuvre4 {
+    background: url("../img/4-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
+
+.oeuvre8 {
+    background: url("../img/8-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
+
+.oeuvre12 {
+    background: url("../img/12-oeuvres.jpg");
+    height: 423px !important;
+    background-size: cover;
+}
+
+.oeuvre4 .card-text,
+.oeuvre8 .card-text,
+.oeuvre12 .card-text {
+    background: rgba(255, 255, 255, 1) !important;
+    position: relative;
+    height: 150px;
+    margin: auto;
+    top: 30%;
+    text-align: right !important;
+} */
+
+.agenda_paul .right_corner{
+  width:37px;
+  height:37px;
+  border-top:16px solid;
+  border-right:16px solid;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.agenda_paul .details1{
+  border-top:1px solid #79a506;
+}
+
+.agenda_paul .details1 .right_corner{
+  border-color:#79a506;
+}
+
+.agenda_paul .details1 .color_text{
+  color:#79a506;
+}
+
+.agenda_paul .details2{
+  border-top:1px solid #935297;
+}
+
+.agenda_paul .details2 .right_corner{
+  border-color:#935297;
+}
+
+.agenda_paul .details2 .color_text{
+  color:#935297;
+}
+
+.agenda_paul .details3{
+  border-top:1px solid #d3336c;
+}
+
+.agenda_paul .details3 .right_corner{
+  border-color:#d3336c;
+}
+
+.agenda_paul .details3 .color_text{
+  color:#d3336c;
+}
+
+.agenda_paul .details4{
+  border-top:1px solid #f36523;
+}
+
+.agenda_paul .details4 .right_corner{
+  border-color:#f36523;
+}
+
+.agenda_paul .details4 .color_text{
+  color:#f36523;
+}
+
+.agenda1{
+  background-image: url('../img/agenda_img1.jpg');
+}
+.agenda2{
+  background-image: url('../img/agenda_img2.jpg');
+}
+.agenda3{
+  background-image: url('../img/agenda_img3.jpg');
+}
+.agenda4{
+  background-image: url('../img/agenda_img4.jpg');
+}
+
+.agenda_paul .pagination li .activeone{
+  color:#D8383F;
+}
+
+.agenda_paul .pagination a{
+  color:black;
+  border-color:transparent;
+  font-size:20px;
+}
+
+.last:hover{
+	background-color: white;
+}
+
+.agenda_paul .pagination a:hover {
+  color: #D8383F;
+  transition: color 0.3s;
+}
+
+.text-block{
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	font-family: "loveloblack";
+	font-size: 1.8rem;
+}
+
+.agenda_paul .next_right{
+  right:50px;
+  font-size:20px;
+  border:5px solid black;
+}
+
+.triangle2{
+  border-bottom:10px solid transparent;
+  border-left:10px solid black;
+  border-top:10px solid transparent;
+  left:22px;
+  top:3px;
+}
+
+footer{
+  background-color:#1D1D1E;
+}
+
+footer a, footer p, footer h3{
+  color:white;
+}
+
+footer p, footer li a{
+  font-size:13px;
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+footer a{
+  transition: all 0.3s;
+}
+footer a:hover{
+  color:#D8383F;
+  text-decoration: none;
+}
+
+
+.text-block1{
+	position: absolute;
+	top: 30%;
+	left: 15px;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	font-family: "loveloblack";
+	font-size: 1.8rem;
+	
+}
+
+.green:hover{
+	color: red;
+}
+
+.text-center{
+	padding-top: 5%;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (max-width: 576px) {
+	.main_visiter .d-flex img{
+		display: none;
+		width: 100%;
+	}
+	
+	.green img{
+
+		max-width: 100%;
+	}
+	.text-block{
+		text-align: center;
+	}
+	.text-block1{
+		position: relative;
+		text-align: center;
+		height: 62.5px;
+		padding: 12.5px 12.5px 0 12.5px;
+		margin-bottom: 22.5px;
+		line-height: 62.5px;
+		width: 100%;
+	}
+	
+	.main_visiter .d-flex{
+		flex-direction: column;
+	}
+	
+	
+	.last h6{
+	position: relative;
+   	border: solid 3px white;
+    width: 100%;
+    height: 35%;
+    padding: 30px 0 24px 0;
+    max-width: none;
+    
+}
+
+hr{
+  color:white;
+  width:85%;
+}
+
+footer .last_ul{
+  width:94%;
+}
+
+footer .last_ul i{
+  position:absolute;
+  left:-30px;;
+  top:12px;
+}
+
+footer .last_ul a{
+  font-size:18px;
+}
+
+.oeuvre4 .card-text::before,
+.oeuvre8 .card-text::before,
+.oeuvre12 .card-text::before {
+    content: "\e907";
+    font-family: 'pba';
+    font-style: normal;
+    position: relative;
+    right: 130px;
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+	.main_visiter .d-flex img{
+		display: none;
+		width: 100%;
+	}
+	
+	.green img{
+
+		max-width: 100%;
+	}
+	.text-block{
+		margin-left: 5%;
+	}
+	.text-block1{
+		position: relative;
+		text-align: center;
+		height: 62.5px;
+		padding: 12.5px 12.5px 0 12.5px;
+		margin-bottom: 22.5px;
+		padding-top: 0;
+		line-height: 62.5px;
+		width: 100%;
+	}
+	
+	.main_visiter .d-flex{
+		flex-direction: column;
+	}
+	
+	.last h6{
+	position: relative;
+   	border: solid 3px white;
+    width: 100%;
+    /*margin: 19%;*/
+    height: 35%;
+    padding: 30px 0 24px 0;
+    max-width: none;
+    
+}
+
+
+.oeuvre4 b,
+.oeuvre8 b,
+.oeuvre12 b {
+    font-size: 3rem;
+
+}
+
+.appli {
+    background: #D8383F;
+    color: #fff;
+}
+
+.appliDownload {
+    border: 2px solid #fff;
+    height: 60px;
+    line-height: 60px;
+    padding: 14px;
+}
+	
+}
+	
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (max-width: 992px) {
+	
+	.main_visiter .d-flex img{
+		display: none;
+		width: 100%;
+	}
+	
+	.text-block1{
+		position: relative;
+		text-align: center;
+		height: 70px;
+		padding: 12.5px 12.5px 0 12.5px;
+		margin-bottom: 22.5px;
+		line-height: 62.5px;
+		width: 98%;
+	}
+	
+	.main_visiter .d-flex{
+		flex-direction: column;
+		text-align: center;
+	}
+	.green img{
+		max-width: 100%;
+	}
+	.befor{
+		width: 10
+	}
+	
+
+	.last h6{
+	position: relative;
+   	border: solid 3px white;
+    /*margin: 19%;*/
+    height: 35%;
+    padding: 30px 0 24px 0;
+    max-width: none;
+	text-align: center;
+    
+}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+	.main_visiter .d-flex img{
+		display: none;
+	}
+	
+	.text-block1{
+		position: relative;
+		height: 100px;
+		padding: 12.5px 12.5px 0 12.5px;
+		margin-bottom: 22.5px;
+		padding-top: 25px;
+		line-height: 62.5px;
+		width: 82%;
+		margin-left: 12%;
+	}
+	
+	.green img{
+		text-align: center;
+		width: 100%;
+	}
+	.main_visiter .d-flex{
+		flex-direction: column;
+		text-align: center;
+		width: 100%;
+	}
+	.text-block{
+		padding: 0 10px 20px 0;
+		text-align: center;
+	}
+	
+	.last h6{
+	position: relative;
+   	border: solid 3px white;
+    width: 100%;
+    /*margin: 19%;*/
+    height: 35%;
+    padding: 30px 0 24px 0;
+    max-width: none;
+	text-align: center;
+    
+}
+    
+
+.st0,
+.st2,
+g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+
+.st1 {
+    fill: #D8383F;
+}
+footer {
+    background: #1D1D1E;
+    color: white;
+    width: 100%;
+}
+footer a{
+    color: white;
+    font-size: 0.9rem;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #D8383F;
+}
+
+
+.info::before {
+    content: "\e938";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.musee::before {
+    content: "\e921";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.presse::before {
+    content: "\e927";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.follow::before {
+    content: "\e939";
+    font-family: 'pba';
+    font-size: 3rem;
+}
+.twitter::before {
+    content: "\e934";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.facebook::before {
+    content: "\e93a";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.insta::before {
+    content: "\e91c";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.youtube::before {
+    content: "\e93c";
+    font-family: 'pba';
+    font-size: 2rem;
+}
+.beforeFooter h3 a{
+    font-size: 1.2rem !important;
+}
+.contacter span::before {
+    content: "\e92b";
+    font-family: 'pba';
+    font-size: 1.4rem;
+}
+.emotion span::before {
+    content: "\e92e";
+    font-family: 'pba';
+    font-size: 1.4rem;
+}
+@media (max-width:767px){
+    footer .list-inline-item {
+        display: block !important;
+    }
+    footer .list-inline ul{
+        padding:5px;
+    }
+    .contacter span::before {
+        content: "\e92b";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .emotion span::before {
+        content: "\e92e";
+        font-family: 'pba';
+        font-size: 1.1rem;
+    }
+    .info::before {
+        content: "\e938";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .musee::before {
+        content: "\e921";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .presse::before {
+        content: "\e927";
+        font-family: 'pba';
+        font-size: 1.5rem;
+    }
+    .twitter::before {
+        content: "\e934";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .facebook::before {
+        content: "\e93a";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .insta::before {
+        content: "\e91c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    .youtube::before {
+        content: "\e93c";
+        font-family: 'pba';
+        font-size: 1.8rem;
+    }
+    footer h2 {
+        font-size: 1.1rem;
+    }
+    .icon {
+        display: inherit;
+    }
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  .footer_container{
+    max-width:550px;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .footer_container{
+    max-width:1400px;
+  }
+}
+
+@media only screen and (max-width:1200px){
+  .details1, .details2, .details3, .details4{
+    border-top:none;
+  }
+  h3{
+    font-size:1.3em;
+  }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*************************************Fonts************************************/
+
+
+@font-face {
+ font-family: "lovelo";
+ src: url("../fonts/lovelo.ttf");
+}
+
+.fontlovelo {
+  font-family: "lovelo";
+}
+
+@font-face {
+ font-family: "pba";
+ src: url("../fonts/pba.ttf");
+}
+
+/*******************************Couleurs***************************************/
+
+.bg-grey{
+  background-color: #1d1d1e;
+}
+
+.backgroundWhite{
+  background-color: white;
+}
+
+.backgroundOrangePink{
+  background-color: #d8383f;
+}
+
+.colorOrangePink{
+  color: #d8383f;
+}
+
+.cW{
+  color: white;
+}
+
+.colorBlack{
+  color: black;
+}
+
+
+/*******************************Header*****************************************/
+
+.logoLille{
+  width: 60px;
+}
+
+.headerForm{
+  width: 175px;
+}
+
+/*******************************Main*******************************************/
+
+/*******************************Section1***************************************/
+
+.bgImage{
+  background-image: url('../img/pba.jpg');
+  background-position: center center;
+  background-size: cover;
+  min-height: 493px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.2) inset;
+}
+
+/*.videoXl{
+  height: 493px;
+  width: 100%;
+  position: relative;
+}*/
+
+.contenuTitre{
+  padding-top: 60px;
+}
+
+.contenuTitreLeft,
+.contenuTitreRight{
+  width: 100%;
+  height: 339px;
+}
+
+.borderTopLeft,
+.borderBottomLeft{
+  height: 35px;
+  border-right: 15px solid white;
+}
+
+.borderTopLeft,
+.borderTopRight{
+  border-top: 15px solid white;
+}
+
+.borderBottomLeft,
+.borderBottomRight{
+  border-bottom: 15px solid white;
+  margin-top: 70px;
+}
+
+.borderTopRight,
+.borderBottomRight{
+  height: 35px;
+  border-left: 15px solid white;
+}
+
+
+.fa-buromobelexperte{
+  padding-top: 75px;
+  margin-bottom: 25px;
+  width: 43px;
+}
+
+.fa-angle-down{
+  width: 50px;
+
+}
+
+/************************Section2-Carousel*************************************/
+
+.squareChip{
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+}
+
+.carousel-container,
+.imgCarousel{
+  height: 500px;
+}
+
+.carousel-caption{
+  margin-bottom: 1.5rem;
+}
+
+.captionContainer{
+  height: 350px;
+}
+
+.lockBarTop,
+.lockBarBot{
+  width: 100%;
+  height: 35px;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+}
+
+.lockBarTop{
+  border-top: 15px solid white;
+  margin-bottom: 75px;
+}
+
+.lockBarBot{
+  border-bottom: 15px solid white;
+  margin-top: 75px;
+}
+
+/************************************Section3**********************************/
+
+.fourWorks{
+  height: 150px;
+}
+
+.discover{
+  font-size: 1.5rem;
+}
+
+/*************************************Section4-Gallery*************************/
+
+.keyArt div{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 430px;
+  display: flex;
+}
+
+.keyArt div:nth-child(1){
+  background-image: url("../img/Le-Concert-dans-l-oeuf_artwork_illustration.jpg")
+}
+
+.keyArt div:nth-child(2){
+  background-image: url("../img/Etude-pour-la-Madone-d-Albe_artwork_illustration.jpg")
+}
+
+.keyArt div:nth-child(3){
+  background-image: url("../img/Les-Vieilles-Le-Temps_artwork_illustration.jpg")
+}
+
+.keyArt div:nth-child(4){
+  background-image: url("../img/Le-festin-d-Herode_artwork_illustration.jpg")
+}
+
+.whiteBox{
+  align-content: flex-end;
+  width: 250px;
+  height: 170px;
+  padding: 23.5px 20px 0px 23.5px;
+}
+
+.buttonGallery span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.info-btn {
+  border: 3px solid white;
+  color:white;
+}
+.info-btn a {
+  color:inherit;
+}
+.info-btn:hover {
+  color: #D8383F;
+  border-color: #D8383F;
+  fill: #D8383F;
+}
+.captionContainer a,
+.info-btn a,
+.oeuvres{
+  text-decoration: none;
+}
+
+.instagramGallery,
+.photoGallery{
+  min-height: 357px;
+  max-height: 1785px;
+
+}
+
+.photoGallery{
+  width: 100%;
+}
+
+.photoGallery{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center top;
+}
+
+.instagramGallery div:nth-child(1){
+  background-image: url("../img/dame.jpg");
+}
+
+.instagramGallery div:nth-child(2){
+  background-image: url("../img/paysage.jpg");
+}
+
+.instagramGallery div:nth-child(3){
+  background-image: url("../img/musee.jpg");
+}
+
+.instagramGallery div:nth-child(4){
+  background-image: url("../img/escalier.jpg");
+}
+
+.instagramGallery div:nth-child(5){
+  background-image: url("../img/statue.jpg");
+}
+
+/************************Section5 Appli mobile*********************************/
+
+.appliMobile{
+  min-height: 150px;
+}
+
+.st0, .st2 , g {
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    fill: #FFF;
+}
+.st1{
+  fill: #D8383F;
+}
+
+.appliMobile p,
+.appliMobile span{
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+
+
+.appliMobile p span{
+  font-weight: bold;
+  border: 3px solid white;
+  line-height: 100px;
+}
+
+.imgDevices,
+.textAppli{
+  margin: 0;
+  padding: 0;
+}
+
+/****************************Lille*********************************************/
+
+.lille,
+.culture{
+  border: 3px solid black;
+}
+
+.lilleCulture span{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.lilleCulture a{
+  text-decoration: none;
+}
+
+@media (min-width: 1200px){
+
+  .appliMobile p span{
+    border: 0;
+    line-height: normal;
+  }
+
+  .lille,
+  .culture{
+    border: 0;
+  }
+}
+.nav {
+  font-family: Arial, sans-serif;
+  font-size:1.2em;
+}
+.nav a:hover {
+  color:#D8383F;
+}
+input[type=search] {
+  border-radius:0;
+}
+.ahover {
+  color:#fff;
+}
+.ahover:hover {
+  color:#D8383F;
+}

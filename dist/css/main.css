@@ -91,6 +91,10 @@
   transition: all 0.5s ease-out;
 }
 
+.col {
+  margin-top: 10%;
+}
+
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
 }
